@@ -13,7 +13,7 @@ radio.setGroup(69)
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-//loop
+// loop
 while (true) {
   if (input.buttonIsPressed(Button.A) === true) {
     distanceToTarget = sonar.ping(DigitalPin.P0, DigitalPin.P1, PingUnit.Centimeters)
@@ -30,7 +30,7 @@ while (true) {
     if (distanceToTarget > 10) {
       basic.showNumber(distanceToTarget)
       basic.pause(1000)
-      radio.sendString("Ok")
+      radio.sendString('Ok')
       basic.pause(1000)
       basic.showIcon(IconNames.Happy)
     }
